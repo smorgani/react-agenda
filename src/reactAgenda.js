@@ -402,6 +402,7 @@ export default class ReactAgenda extends Component {
   /*******************/
 
   onDragStart(e) {
+    if (this.props.disableDrag) return;
 
     isDragging = true;
     isMouseDown = false;
@@ -412,7 +413,9 @@ export default class ReactAgenda extends Component {
   }
 
   onDragEnter(e) {
-    e.preventDefault()
+    if (this.props.disableDrag) return;
+
+    e.preventDefault();
     if (!isDragging) {
       this.removeSelection();
     }
@@ -424,7 +427,9 @@ export default class ReactAgenda extends Component {
   }
 
   onDragOver(e) {
-     e.preventDefault()
+    if (this.props.disableDrag) return;
+
+    e.preventDefault();
     e.stopPropagation();
 
     if (e.target.id === draggedElement) {
@@ -453,7 +458,9 @@ export default class ReactAgenda extends Component {
   }
 
   dragEvent(id, d) {
-    if(!this.props.onChangeEvent){
+    if (this.props.disableDrag) return;
+
+    if (!this.props.onChangeEvent) {
       return;
     }
     var date = d;
@@ -520,8 +527,8 @@ export default class ReactAgenda extends Component {
   }
 
   resizeEvent(id, date) {
-
-    if(!this.props.onChangeDuration){
+    if (this.props.disableDrag) return;
+    if (!this.props.onChangeDuration) {
       return;
     }
 
@@ -552,8 +559,8 @@ export default class ReactAgenda extends Component {
     }
   }
 
-
   onDragEnd(e) {
+    if (this.props.disableDrag) return;
 
     let newDate = draggedElement;
 
@@ -570,6 +577,7 @@ export default class ReactAgenda extends Component {
   }
 
   onDragHandlerStart(e) {
+    if (this.props.disableDrag) return;
 
     isDragging = true;
     e.dataTransfer.setData("text/html", e.target);
@@ -579,8 +587,7 @@ export default class ReactAgenda extends Component {
   }
 
   onDragHandlerEnd(e, n) {
-
-
+    if (this.props.disableDrag) return;
 
     if (typeof draggedElement === undefined || draggedElement === "") {
       return;
@@ -1029,7 +1036,8 @@ ReactAgenda.propTypes = {
   rowsPerHour: PropTypes.number,
   itemColors: PropTypes.object,
   fixedHeader: PropTypes.bool,
-  autoScaleNumber: PropTypes.bool
+  autoScaleNumber: PropTypes.bool,
+  disableDrag: PropTypes.bool,
 };
 
 ReactAgenda.defaultProps = {
@@ -1054,5 +1062,6 @@ ReactAgenda.defaultProps = {
     "color-3": "rgba(235, 85, 59, 1)",
     "color-4": "rgba(70, 159, 213, 1)",
   },
-  fixedHeader: true
-}
+  fixedHeader: true,
+  disableDrag: true,
+};
