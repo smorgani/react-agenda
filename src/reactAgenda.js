@@ -402,8 +402,6 @@ export default class ReactAgenda extends Component {
   /*******************/
 
   onDragStart(e) {
-    if (this.props.disableDrag) return;
-
     isDragging = true;
     isMouseDown = false;
     draggedItem = e.target.id;
@@ -413,8 +411,6 @@ export default class ReactAgenda extends Component {
   }
 
   onDragEnter(e) {
-    if (this.props.disableDrag) return;
-
     e.preventDefault();
     if (!isDragging) {
       this.removeSelection();
@@ -427,8 +423,6 @@ export default class ReactAgenda extends Component {
   }
 
   onDragOver(e) {
-    if (this.props.disableDrag) return;
-
     e.preventDefault();
     e.stopPropagation();
 
@@ -458,8 +452,6 @@ export default class ReactAgenda extends Component {
   }
 
   dragEvent(id, d) {
-    if (this.props.disableDrag) return;
-
     if (!this.props.onChangeEvent) {
       return;
     }
@@ -527,7 +519,6 @@ export default class ReactAgenda extends Component {
   }
 
   resizeEvent(id, date) {
-    if (this.props.disableDrag) return;
     if (!this.props.onChangeDuration) {
       return;
     }
@@ -560,8 +551,6 @@ export default class ReactAgenda extends Component {
   }
 
   onDragEnd(e) {
-    if (this.props.disableDrag) return;
-
     let newDate = draggedElement;
 
     if (ctrlKey) {
@@ -577,8 +566,6 @@ export default class ReactAgenda extends Component {
   }
 
   onDragHandlerStart(e) {
-    if (this.props.disableDrag) return;
-
     isDragging = true;
     e.dataTransfer.setData("text/html", e.target);
     e.dataTransfer.dropEffect = "move";
@@ -587,8 +574,6 @@ export default class ReactAgenda extends Component {
   }
 
   onDragHandlerEnd(e, n) {
-    if (this.props.disableDrag) return;
-
     if (typeof draggedElement === undefined || draggedElement === "") {
       return;
     }
@@ -1004,11 +989,11 @@ export default class ReactAgenda extends Component {
         >
           <table cellSpacing="0" cellPadding="0">
             <tbody
-              onMouseDown={this.handleAllClickStarts}
-              onDragEnter={this.onDragEnter}
-              onDragOver={this.onDragOver}
-              onMouseUp={this.handleAllClickEnds}
-              onMouseOver={this.handleMouseOver}
+              onMouseDown={disableDrag ? null : this.handleAllClickStarts}
+              onDragEnter={disableDrag ? null : this.onDragEnter}
+              onDragOver={disableDrag ? null : this.onDragOver}
+              onMouseUp={disableDrag ? null : this.handleAllClickEnds}
+              onMouseOver={disableDrag ? null : this.handleMouseOver}
             >
               {this.getBodyRows().map(renderBodyRows, this)}
             </tbody>
@@ -1063,5 +1048,5 @@ ReactAgenda.defaultProps = {
     "color-4": "rgba(70, 159, 213, 1)",
   },
   fixedHeader: true,
-  disableDrag: true,
+  disableDrag: false,
 };
