@@ -989,11 +989,11 @@ export default class ReactAgenda extends Component {
         >
           <table cellSpacing="0" cellPadding="0">
             <tbody
-              onMouseDown={disableDrag ? null : this.handleAllClickStarts}
-              onDragEnter={disableDrag ? null : this.onDragEnter}
-              onDragOver={disableDrag ? null : this.onDragOver}
-              onMouseUp={disableDrag ? null : this.handleAllClickEnds}
-              onMouseOver={disableDrag ? null : this.handleMouseOver}
+            // onMouseDown={disableDrag ? null : this.handleAllClickStarts}
+            // onDragEnter={disableDrag ? null : this.onDragEnter}
+            // onDragOver={disableDrag ? null : this.onDragOver}
+            // onMouseUp={disableDrag ? null : this.handleAllClickEnds}
+            // onMouseOver={disableDrag ? null : this.handleMouseOver}
             >
               {this.getBodyRows().map(renderBodyRows, this)}
             </tbody>
@@ -1022,7 +1022,6 @@ ReactAgenda.propTypes = {
   itemColors: PropTypes.object,
   fixedHeader: PropTypes.bool,
   autoScaleNumber: PropTypes.bool,
-  disableDrag: PropTypes.bool,
 };
 
 ReactAgenda.defaultProps = {
@@ -1048,5 +1047,4 @@ ReactAgenda.defaultProps = {
     "color-4": "rgba(70, 159, 213, 1)",
   },
   fixedHeader: true,
-  disableDrag: false,
 };
