@@ -1,14 +1,14 @@
 
 
 
-.edit-item-icon{
+._HZ64P{
 
   background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYgMzQuNXY3LjVoNy41bDIyLjEzLTIyLjEzLTcuNS03LjUtMjIuMTMgMjIuMTN6bTM1LjQxLTIwLjQxYy43OC0uNzguNzgtMi4wNSAwLTIuODNsLTQuNjctNC42N2MtLjc4LS43OC0yLjA1LS43OC0yLjgzIDBsLTMuNjYgMy42NiA3LjUgNy41IDMuNjYtMy42NnoiLz48cGF0aCBkPSJNMCAwaDQ4djQ4aC00OHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=) no-repeat;
 background-size: cover;
 width: 12px;
 height: 12px;
 }
-.remove-item-icon{
+._1JFPk{
 
   background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI0IDRjLTExLjA1IDAtMjAgOC45NS0yMCAyMHM4Ljk1IDIwIDIwIDIwIDIwLTguOTUgMjAtMjAtOC45NS0yMC0yMC0yMHptMTAgMjcuMTdsLTIuODMgMi44My03LjE3LTcuMTctNy4xNyA3LjE3LTIuODMtMi44MyA3LjE3LTcuMTctNy4xNy03LjE3IDIuODMtMi44MyA3LjE3IDcuMTcgNy4xNy03LjE3IDIuODMgMi44My03LjE3IDcuMTcgNy4xNyA3LjE3eiIvPjxwYXRoIGQ9Ik0wIDBoNDh2NDhoLTQ4eiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==) no-repeat ;
   background-size: cover;
@@ -18,7 +18,7 @@ height: 12px;
 
 
 
-.agenda-cell-item {
+._V-TZH {
     font-size: 14px;
     overflow: hidden;
     display: flex;
@@ -36,22 +36,22 @@ height: 12px;
         -webkit-backface-visibility: hidden;
 }
 
-.agenda-item-description {
+._2K9kU {
   padding: 8px;
   font-size: 12px;
 }
 
-.agenda-item-description section {
+._2K9kU section {
   font-size: 12px;
 }
 
-.agenda-item-description small {
+._2K9kU small {
   color:#ff0000;
   font-size: 12px;
 }
 
 
-.agenda-controls-item {
+._2Qfim {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,7 +59,7 @@ height: 12px;
     border-bottom: 1px solid #eee;
 }
 
-.agenda-edit-event {
+._PnHYt {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -68,14 +68,14 @@ height: 12px;
     width: 50%;
     border-right: 1px solid #eee;
 }
-.agenda-edit-modele {
+._KP8PS {
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
 }
 
-.agenda-delete-event {
+._1Hs2Y {
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -84,7 +84,7 @@ height: 12px;
 
 }
 
-.agenda-delete-modele {
+._1oQXf {
   display: flex;
   width: 100%;
   height: 100%;
@@ -93,14 +93,15 @@ height: 12px;
 }
 
 
-.agendCtrls-wrapper {
+
+._2Sffu {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.agendCtrls-event-input {
+._KnJwj {
     padding: 5px;
     width: 100%;
     box-sizing: border-box;
@@ -108,20 +109,20 @@ height: 12px;
     z-index: 3;
 }
 
-.agendCtrls-remove-button{
+._1jqcm{
   margin-left: 8px;
 }
 
-.agendCtrls-timePicker-wrapper{
+._2wxI_{
   display: flex;
   flex-direction: row;
   padding-top: 8px;
 }
 
-.agendCtrls-label-wrapper{
+._GQ7Z9{
   display: flex;
 }
-.agendCtrls-radio-buttons {
+._1QifB {
     width: 30px;
     height: 30px;
     display: flex;
@@ -131,7 +132,7 @@ height: 12px;
     align-items: center;
     margin-left: 8px;
 }
-.agendCtrls-radio-button {
+._UaIz6 {
   width: 100%;
       height: 100%;
       background: none;
@@ -139,7 +140,7 @@ height: 12px;
       border-radius: 50%;
 
 }
-.agendCtrls-radio-button--checked {
+._3gHMB {
   width: 100%;
       height: 100%;
       box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
@@ -147,14 +148,14 @@ height: 12px;
       border: none;
       border-radius: 50%;
 }
-.agendCtrls-radio-wrapper{
+._3AzuH{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
 }
 
-.agendCtrls-time-picker {
+._3i0Nq {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,19 +163,19 @@ height: 12px;
 }
 
 
-.agendCtrls-time-picker label {
+._3i0Nq label {
   font-size: 15px;
   font-weight: 600;
   padding: 8px;
 }
 
-.agendCtrls-label-inline {
+._dD0-I {
   display: flex;
       flex-direction: column;
       width: 50%;
 }
 
-.agendCtrls-label-inline label{
+._dD0-I label{
   font-size: 15px;
 font-weight: 600;
 align-self: flex-start;
@@ -183,15 +184,13 @@ padding: 8px;
 
 
 @media screen and (max-width: 639px) {
-  .agendCtrls-timePicker-wrapper {
-    display: -ms-flexbox;
+  ._2wxI_ {
     display: flex;
-    -ms-flex-direction: row;
     flex-direction: column;
     padding-top: 8px;
 }
 
-.agendCtrls-label-inline {
+._dD0-I {
   display: flex;
       flex-direction: column;
       width: 100%;
@@ -200,12 +199,13 @@ padding: 8px;
 }
 
 
+
 :root {
   --selection:rgba(102, 195, 131 , 0.7);;
 }
 
 
-.agenda__table > table {
+._UFwj4 > table {
   border-spacing: 0;
       width: 100%;
       table-layout: fixed;
@@ -216,7 +216,7 @@ padding: 8px;
 
 
 
-.agenda__table.\--body {
+._UFwj4._1K57L {
     height: calc(100vh - 64px);
     overflow: overlay;
     -webkit-transform: translate3d(0,0,0);
@@ -227,29 +227,35 @@ padding: 8px;
  **/
 
 
-.rectangle{
+._1JB-4{
   border: none;
   background: var(--selection);
   position: absolute;
   z-index: 1000;
-   user-select: none;
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
    pointer-events: none;
 }
-.helper-reactangle{
+._1huly{
   border: none;
   position: absolute;
   z-index: 1000;
-   user-select: none;
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
    pointer-events: none;
 }
 
 
-.agenda__cell.\--head {
+._1cIOr._2oWks {
   border-right: none;
 
 }
 
-.agenda__table.\--header .agenda__cell {
+._UFwj4._12OYX ._1cIOr {
     height: 45px;
     padding: 0;
 
@@ -260,7 +266,7 @@ padding: 8px;
  *  Time Cell Styles
  **/
 
-.agenda__cell.\--time {
+._1cIOr._JTgPl {
   width: 100px;
   vertical-align: middle;
   text-align: center;
@@ -273,7 +279,7 @@ padding: 8px;
 
 }
 
-.agenda__cell.\--time-now {
+._1cIOr._1geds {
   width: 100px;
   vertical-align: middle;
   font-size: 16px;
@@ -289,14 +295,12 @@ padding: 8px;
  *  Controls Cells Styles
  **/
 
-.agenda-controls-layout {
-    display: -ms-flexbox;
+._1DDph {
     display: flex;
-    -ms-flex-direction: row;
     flex-direction: row;
     justify-content: space-around;
 }
-.agenda__cell.\--controls {
+._1cIOr._11jRy {
     width: 100px;
     border-right: none;
     border-left: none;
@@ -304,49 +308,47 @@ padding: 8px;
 
 
 
-.agenda__cell.\--controls:hover {
+._1cIOr._11jRy:hover {
   background: none;
 
 }
 
-.agenda__cell.\--controls .agenda__prev.\--disabled {
+._1cIOr._11jRy ._2xFIn._2KrWU {
     background-color: #EEE;
 }
 
-.agenda__cell.\--controls .agenda__next.\--disabled {
+._1cIOr._11jRy ._18_r-._2KrWU {
     background-color: #EEE;
 }
 
-.agenda__cell.\--controls .agenda__prev:hover {
+._1cIOr._11jRy ._2xFIn:hover {
     box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
 }
 
-.agenda__cell.\--controls .agenda__next:hover  {
+._1cIOr._11jRy ._18_r-:hover  {
         box-shadow: rgba(0,0,0,0.2) 0 1px 4px;
 }
 
-.agenda__prev {
+._2xFIn {
   background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS04MzgtMjIzMkg1NjJ2MzYwMEgtODM4eiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNiAxMHYyOGwyMi0xNHoiLz48cGF0aCBkPSJNMCAwaDQ4djQ4SDB6IiBmaWxsPSJub25lIi8+PC9zdmc+) no-repeat;
     width: 20px;
     height: 20px;
       background-size: cover;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     filter: FlipH;
     -ms-filter: "FlipH";
 }
 
-.agenda__next {
+._18_r- {
   background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS04MzgtMjIzMkg1NjJ2MzYwMEgtODM4eiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNiAxMHYyOGwyMi0xNHoiLz48cGF0aCBkPSJNMCAwaDQ4djQ4SDB6IiBmaWxsPSJub25lIi8+PC9zdmc+) no-repeat;
   width: 20px;
   height: 20px;
   background-size: cover;
 }
 
-.agenda__cell.\--controls .agenda__prev, .agenda__cell.\--controls .agenda__next {
+._1cIOr._11jRy ._2xFIn, ._1cIOr._11jRy ._18_r- {
     border: none;
     padding: 0;
     cursor: pointer;
@@ -354,24 +356,24 @@ padding: 8px;
 }
 
 
-.agenda__cell{
+._1cIOr{
   border-left: 1px solid rgba(192,192,192,0.4);
   border-bottom: 1px solid rgba(192,192,192,0.4);
 
 }
 
-.agenda__cell.\--time-now {
+._1cIOr._1geds {
     font-weight: bold;
     border-right: 5px solid rgb(102, 195, 131);
 }
 
-.agenda__cell.\--time:hover, .agenda__cell.\--time-now:hover , .agenda__cell.\--head:hover{
+._1cIOr._JTgPl:hover, ._1cIOr._1geds:hover , ._1cIOr._2oWks:hover{
   background: none;
 }
 
 
 
-.agenda__cell_selected {
+._2mcod {
     background: var(--selection);
    
 }
@@ -380,7 +382,7 @@ padding: 8px;
  * Minute Cell Styles
  **/
 
-.agenda__cell {
+._1cIOr {
 
     height: 15px;
 
@@ -389,12 +391,11 @@ padding: 8px;
     text-align: center;
 }
 
-.no-select {
+._35-PR {
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;
     /* Safari */
-    -khtml-user-select: none;
     /* Konqueror HTML */
     -moz-user-select: none;
     /* Firefox */
@@ -408,7 +409,7 @@ padding: 8px;
 
 
 
-.dragDiv {
+._1JxGx {
     overflow: hidden;
     text-align: left;
     display: inline;
@@ -416,7 +417,7 @@ padding: 8px;
     float: left;
 }
 
-.dragDiv i {
+._1JxGx i {
   z-index: 8;
   pointer-events: none;
   display: block;
@@ -425,7 +426,7 @@ padding: 8px;
   background-size: cover;
 }
 
-.handler {
+._23F3N {
     text-align: right;
     height: 5px;
     cursor: n-resize;
@@ -435,7 +436,7 @@ padding: 8px;
 }
 
 
-.handler i {
+._23F3N i {
     position: absolute;
     margin-top: 8px;
     margin-left: 8px;
@@ -446,28 +447,28 @@ padding: 8px;
     background-size: cover;
 }
 
-.handle {
+._2fJIa {
     cursor: pointer;
     /* border: 1px solid #9c0; */
     margin-left: 0px;
     width: 150px;
 }
-.drag-handle-icon{
+._CWryI{
 
   background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTMwIDE1di0xMWgtMTJ2MTFsNiA2IDYtNnptLTE1IDNoLTExdjEyaDExbDYtNi02LTZ6bTMgMTV2MTFoMTJ2LTExbC02LTYtNiA2em0xNS0xNWwtNiA2IDYgNmgxMXYtMTJoLTExeiIvPjwvc3ZnPg==) no-repeat ;
 
 }
-.resize-handle-icon{
+._16ROZ{
 
   background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTI0IDExLjY2bDYuMzQgNi4zNCAyLjgzLTIuODMtOS4xNy05LjE3LTkuMTcgOS4xNyAyLjgzIDIuODMgNi4zNC02LjM0em0wIDI0LjY4bC02LjM0LTYuMzQtMi44MyAyLjgzIDkuMTcgOS4xNyA5LjE3LTkuMTctMi44My0yLjgzLTYuMzQgNi4zNHoiLz48L3N2Zz4=) no-repeat ;
 
 }
 
 
-.agenda__row.\--hour-start>.agenda__cell {
+._3C6c7._3KDGr>._1cIOr {
 }
 
-.disable-select {
+._sU50n {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -476,11 +477,11 @@ padding: 8px;
 
 @media screen and (max-width: 1024px) {
  
-  .agenda__cell.\--time {
+  ._1cIOr._JTgPl {
       width: 60px;
 
   }
-  .agenda__cell.\--controls {
+  ._1cIOr._11jRy {
       width: 60px;
 
   }
@@ -488,17 +489,13 @@ padding: 8px;
 
 
 }
-.modal-wrapper{
 
-  display: -ms-flexbox;
+._2aOim{
       display: flex;
-      -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
       z-index: 10;
-      -ms-flex-pack: distribute;
       justify-content: space-around;
       position: fixed;
-      -ms-flex-align: center;
       align-items: center;
       top: 0px;
       bottom: 0;
@@ -508,7 +505,7 @@ padding: 8px;
 }
 
 
-.modal{
+._2hKHM{
   z-index: 102;
       display: flex;
       flex-direction: column;
@@ -518,7 +515,7 @@ padding: 8px;
       background: #FFF;
 }
 
-.modal-nude{
+._kZwNg{
   z-index: 102;
       display: flex;
       flex-direction: column;
@@ -526,7 +523,7 @@ padding: 8px;
 
 }
 
-.modal-close {
+._fwbmE {
     margin-left: 97%;
     position: relative;
     width: 18px;
@@ -542,7 +539,7 @@ padding: 8px;
     cursor: pointer;
 }
 
-.hide-modal{
+._32-61{
 
   margin-right: 5px;
   margin-top: 5px;
@@ -550,8 +547,7 @@ padding: 8px;
 
 
 
-.modal-title{
+._19D-_{
   margin: 5px;
 font-size: 20px;
 }
-

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import {getLast, getFirst} from './helpers.js';
 import './reactAgendaItem.css';
+import HumanizeDuration from 'react-humanize-duration';
 
 export default class ReactAgendaItem extends Component {
   constructor(props) {
@@ -111,7 +112,7 @@ if(elem){
             <div className="agenda-item-description">
               <section>{this.props.item.name}</section>
             <small>
-              , {duratL} - {duratE} , {duratH}
+              , {duratL} - {duratE} , <HumanizeDuration duration={this.props.item.duration._milliseconds} largest={2} round={true}/>
             </small>
           </div>
 

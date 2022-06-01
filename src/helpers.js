@@ -80,7 +80,7 @@ export function mapItems(itemsArray, rowsPerHour, timezone) {
     var offsetMinutes = item.startDateTime.getMinutes() % interval;
     var start = moment(item.startDateTime).subtract(offsetMinutes, "minutes").toDate();
     var end = moment(item.endDateTime);
-    var duration = moment.duration(end.diff(start));
+    var duration = moment.duration(end.diff(moment(item.startDateTime))); //moment.duration(end.diff(start));
     item.duration = duration
     var rows = Math.ceil(duration.asHours() / (interval / 60));
 
@@ -123,5 +123,4 @@ export function mapItems(itemsArray, rowsPerHour, timezone) {
   }, this);
   return itemsMap;
 }
-
 
